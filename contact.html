@@ -173,8 +173,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <label>Message</label>
                                     <textarea id="textarea" placeholder="" required=""></textarea>
                                 </div>
-                                <div class="g-recaptcha" data-sitekey="6LfSkJsUAAAAADRgQtRpAuzOwEOaLGcukYVShXl7"></div>
+                                <div class="g-recaptcha" data-sitekey="6LfjbvoUAAAAADqom4VIPTzeER7XK20wzClD_-vy"></div>
                                 <div>
+					 <div id="html_element"></div>
+      <br>
                                 <input class="form-control" type="submit" value="Submit" src=""></div>
 
                             </div>
@@ -429,6 +431,15 @@ function myFunction() {
   }
 }
 </script>
-
+	<script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('html_element', {
+          'sitekey' : '6LfjbvoUAAAAABQgaR3x2m8zADWzWMM0kl2BXy09'
+        });
+      };
+    </script>
+ <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
 </body>
 </html>
